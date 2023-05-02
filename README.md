@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# WaiLai Tutor Center Web Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+For HW3, I not only incorporated ReactJS into the project but also gave the WaiLai Tutor Center website a complete revamp. The updated website now features a cleaner, more modern, and dynamic design that I personally really like.
 
-## Available Scripts
+### How to run the Webpage
 
-In the project directory, you can run:
+To run the webpage, follow these steps:
 
-### `npm start`
+1. Open the webpage with an IDE, specifically VS Code.
+2. Use the command line to navigate to the directory.
+3. Run the command npm start and wait for the webpage to start.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### New update
+`
+#### Modulrize my code
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I have modularized my code by breaking the entire website into different components, each in its own file. This makes the code more readable and reduces redundancy. For example, both the AboutUs and Services pages share the same React component, which I rebuilt using related variables like `title`, `content`, `section-name`, etc. as input.
 
-### `npm test`
+#### Better CSS design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I have improved the CSS design by using `:root` to declare local variables that make it more consistent and easier to maintain.
 
-### `npm run build`
+#### Better Slideshow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instead of showcasing images, I created an article component and use slideshow to showcase different articles that is related to children and parenting.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Image Track
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To compensate for the lack of images, I added an image track that allows the user to slide through images using their mouse.
 
-### `npm run eject`
+#### Remake ContactUs page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have remade the ContactUs page to focus on how visitors can leave their contact information so that we can start to get in touch. Instead of having three separate forms for customer inquiries, job seeking, and feedback previously, I decided to create a newsletter form for visitors to fill in and receive updates about WaiLai Tutor Center.

@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
 
 import Header from './components/header/Header';
@@ -11,6 +10,7 @@ import Home from './components/home/Home';
 import About from './components/content/About';
 import Service from './components/content/Service';
 import ContactUs from './components/contactus/ContactUs';
+
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <Route exact path="/about" element={<About />} />
             <Route exact path="/service" element={<Service />} />
             <Route exact path="/contact_us" element={<ContactUs />} />
+
           </Routes>
       </Router>
     </>

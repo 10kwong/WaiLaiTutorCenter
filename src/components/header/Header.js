@@ -37,7 +37,7 @@ function Header() {
                   </Link>
                </li>
                <li>
-                  <Link onClick={()=> {setCurrentAt('contact_us')}} to="contact_us" className={currentAt === 'contact_us' ? 'nav_menu_item active': 'nav_menu_item'}>
+                  <Link onClick={()=> {setCurrentAt('contact_us')}} to="/contact_us" className={currentAt === 'contact_us' ? 'nav_menu_item active': 'nav_menu_item'}>
                      <AiOutlinePhone />   
                      <span className='nav_menu_item_toggle'>聯絡我們</span>
                   </Link>
