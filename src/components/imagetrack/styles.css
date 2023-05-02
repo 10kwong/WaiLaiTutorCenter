@@ -1,0 +1,43 @@
+:root {
+   --header-color: hsl(34, 48%, 28%);
+   --header-font-size: 1.842rem;
+   --font-semi-bold: 600;
+
+   --photo-background-color: hsl(220, 100%, 99%);
+   --img-width: 40vmin;
+   --img-height: calc(var(--img-width)/6*8);
+   --track-gap: 1vmin;
+
+   --track-width: 100%;
+}
+
+.image-track-container {
+   background-color: var(--photo-background-color);
+   width: var(--track-width);
+   overflow: hidden;
+}
+
+#image-track > .image {
+   width: var(--img-width);
+   height: var(--img-height);
+   object-fit: cover;
+   object-position: 100% center;
+   cursor: pointer;
+} 
+
+#image-track {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: var(--track-gap);
+   transform: translate(18%, 0%);
+   user-select: none;
+} 
+
+.image-track-title {
+   font-size: var(--header-font-size);
+   font-weight: var(--font-semi-bold);
+   color: var(--header-color);
+   margin: 9px 18px;
+}
